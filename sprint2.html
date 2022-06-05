@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sprint2.css" />
+    <title>Sprint 2</title>
+  </head>
+  <body>
+    <div class="container bg-primary">
+      <div class="d-flex justify-content-center">
+        <h1>App de gastos</h1>
+      </div>
+      <div class="d-flex justify-content-center">
+        <p>Ingresa cuanto gastó cada persona</p>
+      </div>
+    </div>
+
+    <div class="container border">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <form class="mb-2">
+            <input
+              type="text"
+              id="persona"
+              class="form-control"
+              placeholder="Nombre"
+            />
+          </form>
+        </div>
+        <div class="col-12 col-md-4">
+          <form class="mb-2">
+            <input
+              type="number"
+              id="pago"
+              class="form-control"
+              placeholder="Cuánto gastó?"
+            />
+          </form>
+        </div>
+        <div class="col-12 col-md-4">
+          <form class="mb-2">
+            <button class="btn btn-danger" onclick="mostrarEnPantalla()">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+      <ul class="list-group" id="list-group"></ul>
+      <div id="total" type="text"></div>
+    </div>
+
+    <script src="/sprint2.js"></script>
+  </body>
+</html>
