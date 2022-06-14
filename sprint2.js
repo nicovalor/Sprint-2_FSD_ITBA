@@ -5,12 +5,6 @@ const resultado = document.getElementById("total");
 const nombre = document.getElementById("persona");
 const pago = document.getElementById("pago");
 
-function mostrarEnPantalla() {
-  agregarNuevoPago();
-  mostrarNuevoPago();
-  promedioDeCadaPersona();
-}
-
 function agregarNuevoPago() {
   personas.push(nombre.value);
   pagos.push(pago.value);
@@ -33,4 +27,10 @@ function promedioDeCadaPersona() {
   let promedioDePago = totalPagos / personas.length;
 
   resultado.innerText = `Total: ${totalPagos}. Cada uno debe: $${promedioDePago}`;
+}
+
+function mostrarEnPantalla() {
+  agregarNuevoPago();
+  mostrarNuevoPago();
+  promedioDeCadaPersona();
 }
