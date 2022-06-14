@@ -12,7 +12,7 @@ function agregarNuevoPago() {
 
 function mostrarNuevoPago() {
   let li = document.createElement("li");
-  let text = document.createTextNode(`${nombre.value} pagó: $${pago.value}`);
+  let text = document.createTextNode(`${nombre.value} gastó: $${pago.value}`);
   li.classList.add("list-group-item");
   li.appendChild(text);
   listado.appendChild(li);
